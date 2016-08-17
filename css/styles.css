@@ -1,0 +1,352 @@
+/*GLOBAL STYLES*/
+
+/*
+====================================
+GLOBAL STYLES FOR THE ENTIRE SITE
+====================================
+*/
+/**{background-color:#FFE6E6;} THIS IS A GLOBAL ATTRIBUTE*/
+@import url(https://fonts.googleapis.com/css?family=Merriweather|Merienda);
+
+html, body {
+    height:100%; /*FILL THE WHOLE PAGE*/
+}
+body {
+    margin:0px; /*goes to the edge*/
+    padding:0px; /*goes to the edge*/
+    background-color:#FFFFFF;
+    /*GLOBALY SELECT FONT IF '' DOESN'T WORK DEFAULT TO NEXT*/
+    font-family:'Source Sans Pro', Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:300;
+
+
+    
+}
+h1, h2, h3 {
+    margin:0px;
+    padding:0px;
+    color:#8DC63F; /*THIS COLOR IS LIME GREEN*/
+    font-family: 'Merienda', cursive, Helvetica, sans-serif;
+}
+h1 {
+    font-size:2em; /*EM IS 2 TIMES  FONT-SIZE THAT IS CURRENTLY 16*/
+}
+p {
+    line-height:20px;
+    margin:15px 0px;/*WILL CREATE A MARGIN BETWEEN PARAGRAPHS TOP AND BOTTOM*/
+}
+strong, b{
+    color:#8DC63F;
+}
+a {
+    color:#8DC63F;
+    text-decoration:none;
+}
+a:hover{
+    color:#35453D;
+
+}
+figure {
+    margin:0px;
+    padding:0px;
+}
+
+/*HEADER STYLES*/
+/*THIS IS AND ID INSTEAD OF CLASS*/
+
+header {
+    /*OPTIONAL BACKGROUND COLOR BEHIND BANNER*/
+    background-color:#FFFFFF;
+}
+
+#header {
+    position:relative;
+    padding:15px 0px;
+}
+#logo {
+    width:75px;
+}
+
+#logo:hover{
+    color:#8DC63F;
+    text-decoration:none;
+}
+
+
+/*NAVIGATION STYLES*/
+
+#menu{
+    position:absolute;
+    top:15px;
+    right:5%;
+}
+/*NAVIGATION TAG LOOK*/
+#menu li{
+    display:inline;
+    margin:0px 20px;
+    text-transform:uppercase;
+    font-weight:600;
+}
+
+#menu li:after {
+    content:"|";
+    padding:0px 20px;
+    color:#35453D;
+}
+
+.currentPage a {
+    /*SECONDARY COLOR*/
+    color:#35453D;
+}
+
+/*BANNER STYLES*/
+
+#bannerHome {
+    background:url(../images/banner.jpg) no-repeat center center #354535;
+    background-size:cover;
+    border-top:3px solid #8DC63F;
+    padding:70px 0px;
+    overflow:hidden;
+}
+
+#bannerAbout {
+    background:url(../images/bannerAbout.jpg) no-repeat center center #354535;
+    background-size:cover;
+    border-top:3px solid #8DC63F;
+    padding:30px 0px;
+    overflow:hidden;
+}
+
+#bannerContact {
+    background:url(../images/bannerContact.jpg) no-repeat center center #35453D;
+    background-size:cover;
+    border-top:3px solid #8DC63F;
+    padding:30px 0px;
+    overflow:hidden;
+}
+
+.bannerTitle {
+    color:#FFFFFF;
+    font-size:8em;
+    text-align:center;
+    text-shadow:6px 6px 6px #000000;
+}
+
+/*MAIN STYLES*/
+.mainBody{
+    width:1200px;
+    overflow:hidden;
+    margin:0px auto; /*HOW TO CENTER ITEM*/
+}
+
+/*COLUMN STYLES*/
+
+.columnA, .columnB, .columnC {
+    width:384px;
+}
+
+.columnA, .columnB {
+    float:left;
+    margin-right:24px;
+}
+
+.columnC {
+    float:left;
+}
+
+.columnA h2, .columnB h2, .columnC h2{
+	font-family: 'Merienda', cursive, Helvetica, sans-serif;
+	font-weight:700;
+    font-size:3em;
+    text-align:center;
+    margin-top:12px;
+}
+
+.columnImage span {
+    background-color:#8DC63F;
+    color:#FFFFFF;
+    /*BLOCK STACK ONE ON TOP OF OTHER*/
+    display:block;
+    font-size:2em;
+    font-weightx:600;
+    padding:15px 0px;
+    margin-bottom:15px;
+    text-align:center;
+    text-transform:uppercase;
+	font-family: 'Merienda', cursive, Helvetica, sans-serif;
+}
+.roundImg{
+    padding:25px 0px;
+    overflow:hidden;
+    border-radius:185px;  
+}
+
+.columnA p, .columnB p, .columnC p{
+    padding:0px;
+    text-align:justify;
+}
+
+/*BUTTON STYLES*/
+
+a.button {
+	font-family: 'Merienda', cursive, Helvetica, sans-serif;
+    background-color:#8DC63F;
+	padding:12px 22px;
+	border:3px solid #CC9953;
+	border-radius:12px 12px;
+	/*border-radius:4px;*/
+	font-size:1.5em;
+	text-transform:uppercase;
+	color:#FFFFFF;
+    text-decoration:none;
+	font-weight:600;
+	float:left; 
+
+
+	/*CLEARS EVERYTHING OFF THAT LINE*/
+}
+a.button:hover {
+    background-color:#35453d;
+}
+
+/*ABOUT STYLES*/
+
+.alignLeft {
+    float:left;
+    width:384px;
+    margin-right:24px;
+    
+}
+
+.alignRight{
+    float:right;
+    width:788px;
+}
+.bannerButton{
+  margin:0px auto;
+  width:260px;
+    
+}
+
+#aboutMe{
+   margin-top:20px;
+}
+
+
+
+/*.vidContainer {*/
+    /*padding-top:20px;*/
+    /*float:left;*/
+    /*width:384px;*/
+    /*margin-right:12px;*/
+/*}*/
+/*.vidContainer2 {*/
+    /*padding-top:30px;*/
+    /*float:right;*/
+    /*width:610px;*/
+    /*margin-right:12px;*/
+/*}*/
+
+/*FOOTER STYLES*/
+footer{
+    margin-top:20px;
+    clear:both;/*PLAY WITH THIS ON THE ABOUT PAGE*/
+}
+
+#copyright {
+    overflow:hidden;
+    padding:40px 0px;
+    border-top:4px solid #8DC63F;
+    background-color:#E2E2E2;
+    display:block;
+}
+
+#copyright p {
+    text-align:center;
+    font-size:1em;
+}
+
+#copyright a {
+    color:#35453D;
+    
+}
+#copyright a:hover {
+    color:#8DC63F;
+    text-decoration:none;
+}
+
+/*CUSTOM STYLES*/
+.vidContainer {
+    margin: 0px auto;
+    width: 98%;
+}
+#videoHolder {
+    height: 0px;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+    width: 100%;
+}
+#videoHolder iframe, .video-container object, .video-container embed {
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+/*FORM */
+#wufoo-z1n5w6jj1qyksd9{
+    background-color:#F1F1F1;
+    border-radius:10px;
+    border:3px solid #35453D;
+    width:80%;
+    margin: 0px auto;
+    padding:40px;
+}
+#maps{
+    /*background-color:#F1F1F1;*/
+    border-radius:10px;
+    /*border:3px solid #8DC63F;*/
+    width:80%;
+    margin: 0px auto;
+    padding:40px;
+}
+
+/*SOCIAL MEDIA STYLES*/
+.fa {
+    background-color:#8DC63F;
+    border:3px solid #FFFFFF;
+    border-radius:100%;
+    font-size:1.7em !important;
+    margin:15px;
+    color:#FFFFFF;
+    height:28px;
+    width:28px;
+    padding:10px;
+    text-align:center;
+    
+}
+.fa:hover{
+    background-color:#35453D;
+}
+
+.fa-facebook{
+    background-color:#0C516E;
+}
+
+.fa-twitter{
+    background-color:#8CA6D9;    
+}
+
+#social{
+    text-align:center;
+}
+/*WANT TO BE SMALLER UNDER CONDIDITON*/
+@media screen and (max-width:400px){
+    h1 {
+        font-size: .6em;
+    }
+}
